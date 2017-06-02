@@ -1,0 +1,14 @@
+Tagging interface merupakan interface tanpa adanya method abstrak di dalamnya,
+ biasanya digunakan untuk menambahkan tipe data pada kelas yang mengimplementasikannya.
+dan digunakan sebagai induk untuk interface lain, atau untuk multiple inheritance pada interface
+
+sebagai contoh:
+public interface nama{}
+public interface aprilia {}
+public interface dewi {}
+
+public interface namaSaya extends nama, aprilia, dewi {
+. . . .
+}
+
+tagging interface juga digunakan untuk membatasi kepemilikan akan instansiasi
